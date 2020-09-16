@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.125rem;
+  padding: 0 2em;
+}
+
+header {
+  padding: 0 2em;
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 90px auto;
+  grid-template-areas: "header header" "content content";
+  place-content: center;
+}
+
+.logo {
+  background: transparent;
+  border-bottom: 2px solid #0000ee;
+}
+
+.logo span {
+  font-family: "Great Vibes", cursive;
+  font-weight: bolder;
+  font-size: 2.5rem;
+  color: #0000ee;
+}
+
+.logo .s-letter {
+  color: #c48e0a;
+  margin-left: -15px;
+}
+nav {
+  height: 100%;
+  display: flex;
+}
+nav .nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .nav-items li {
+  margin-right: 2.5em;
+}
+
+nav .nav-items a {
+  color: #363533;
+  font-weight: 500;
+}
+
+.nav-items li:hover a {
+  color: #d5d84d;
+  border-bottom: 2px solid #d5d84d;
+  padding-bottom: 5px;
+}
+
+.hero {
+  padding: 4em 2em;
+  grid-area: content;
+  display: flex;
+  background: linear-gradient(to right, #c36f00, #d8dd6d, #eef0bf);
+}
+
+.hero .cta-btn {
+  background-color: #073fcc;
+}
+
+.hero .cta-btn:hover {
+  background-color: #6d80e4;
+}
